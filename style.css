@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    background: var(--Dark-Blue, #202733);
+}
+.square{
+    width: 343px;
+height: 315px;
+flex-shrink: 0;
+border-radius: 10px;
+background: var(--Dark-Grayish-Blue, #313A48);
+box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 24px 0 24px;
+}
+.title{
+    display: flex;
+    text-align: center;
+}
+.box{
+    width: 295px;
+    height: 145px;
+}
+h2,h1,h3{
+    font-family:'Manrope'
+}
+h2,h3{
+    color: var(--Neon-Green, #53FFAA);
+text-align: center;
+font-size: 11px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 3.457px;
+}
+h1{
+    color: var(--Light-Cyan, #CEE3E9);
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: -0.257px;
+margin-top: 24px;
+}
+.line{
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+.xazi{
+    width: 122px;
+height: 1px;
+flex-shrink: 0;
+background: var(--Grayish-Blue, #4F5D74);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 64px;
+height: 64px;
+border-radius: 50%;
+background: #53FFAA;
+border: none;
+margin-top: 243px;
+cursor: pointer;
+}
+.class{
+transform: rotate(1turn);
+transition: 0.5s;
+}
+button:hover{
+    box-shadow: 0 0 35px 5px #53FFAA ;
+}
+
+
+
+@media(width >= 1440px){
+    .square{
+        width: 540px;
+height: 332px;
+flex-shrink: 0;
+padding: 48px;
+    }
+    .box{
+        width: 444px;
+    }
+    h1{
+        color: var(--Light-Cyan, #CEE3E9);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 28px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: -0.3px;
+    }
+    h2,h3{
+        color: var(--Neon-Green, #53FFAA);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 13px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 4.086px;
+    }
+    .line{
+        gap: 16px;
+        margin-top: 40px;
+    }
+    .xazi{
+        width: 196px;
+height: 1px;
+flex-shrink: 0;
+    }
+    button{
+        margin-top: 258px;
+    }
+}
